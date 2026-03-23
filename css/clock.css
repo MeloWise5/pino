@@ -1,0 +1,179 @@
+/* ============================================================
+   Pino Landscaping – World Clock Page Styles
+   Dark card design with glowing digital font feel
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+:root {
+  --clock-bg:         #0d0d1a;
+  --clock-card-bg:    #1a1a2e;
+  --clock-card-local: #0f2b1a;
+  --clock-accent:     #00e5a0;
+  --clock-accent-dim: #00b37a;
+  --clock-text:       #c8d8e8;
+  --clock-label:      #8899aa;
+  --clock-border:     rgba(0, 229, 160, 0.18);
+  --clock-glow:       0 0 18px rgba(0, 229, 160, 0.35);
+  --clock-glow-hover: 0 0 30px rgba(0, 229, 160, 0.55);
+  --clock-font:       'Share Tech Mono', 'Courier New', Courier, monospace;
+  --clock-radius:     12px;
+  --clock-transition: 0.3s ease;
+}
+
+/* ---------- Page Layout ---------- */
+.clock-page-hero {
+  background: linear-gradient(135deg, #0d0d1a 0%, #1a1a2e 60%, #0f2b1a 100%);
+  padding: 7rem 1.5rem 3.5rem;
+  text-align: center;
+}
+
+.clock-page-hero__label {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--clock-accent);
+  margin-bottom: 0.75rem;
+}
+
+.clock-page-hero__title {
+  font-family: var(--font-heading, 'Playfair Display', Georgia, serif);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.clock-page-hero__sub {
+  font-size: 1.05rem;
+  color: rgba(200, 216, 232, 0.8);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ---------- Clock Grid Section ---------- */
+.clock-section {
+  background: var(--clock-bg);
+  padding: 3.5rem 1.5rem 5rem;
+}
+
+.clock-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ---------- Clock Card ---------- */
+.clock-card {
+  background: var(--clock-card-bg);
+  border: 1px solid var(--clock-border);
+  border-radius: var(--clock-radius);
+  padding: 1.8rem 1.5rem;
+  text-align: center;
+  box-shadow: var(--clock-glow);
+  transition: transform var(--clock-transition), box-shadow var(--clock-transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.clock-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--clock-radius);
+  background: linear-gradient(135deg, rgba(0,229,160,0.04) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.clock-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: var(--clock-glow-hover);
+}
+
+/* Local clock highlight */
+.clock-card--local {
+  background: var(--clock-card-local);
+  border-color: rgba(0, 229, 160, 0.45);
+  box-shadow: 0 0 28px rgba(0, 229, 160, 0.45);
+}
+
+.clock-card--local .clock-card__city {
+  color: #fff;
+}
+
+/* ---------- Card Inner Elements ---------- */
+.clock-card__city {
+  font-family: var(--font-heading, 'Playfair Display', Georgia, serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--clock-text);
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.04em;
+}
+
+.clock-card__badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--clock-accent);
+  background: rgba(0, 229, 160, 0.12);
+  border: 1px solid rgba(0, 229, 160, 0.3);
+  border-radius: 20px;
+  padding: 0.15rem 0.65rem;
+  margin-bottom: 1.1rem;
+}
+
+.clock-card__time {
+  font-family: var(--clock-font);
+  font-size: clamp(1.9rem, 3.5vw, 2.5rem);
+  color: var(--clock-accent);
+  letter-spacing: 0.06em;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 12px rgba(0, 229, 160, 0.6);
+}
+
+.clock-card__date {
+  font-family: var(--clock-font);
+  font-size: 0.82rem;
+  color: var(--clock-label);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.6rem;
+}
+
+.clock-card__offset {
+  font-size: 0.72rem;
+  color: var(--clock-accent-dim);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .clock-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .clock-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+
+  .clock-page-hero {
+    padding: 6rem 1.2rem 3rem;
+  }
+
+  .clock-card__time {
+    font-size: 2.2rem;
+  }
+}
