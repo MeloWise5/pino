@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="World Clock – see the current local time in New York, London, Paris, Dubai, Tokyo, Sydney, Los Angeles, and your own timezone." />
+  <meta name="keywords" content="world clock, time zones, current time, Pino Landscaping" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="World Clock | Pino Landscaping" />
+  <meta property="og:description" content="Live digital clocks across eight global time zones." />
+  <meta property="og:type" content="website" />
+  <title>World Clock | Pino Landscaping</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/clock.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav scrolled" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Pino Landscaping home">
+        <span class="nav-logo__name">Pino Landscaping</span>
+        <span class="nav-logo__tag">Crafted for Life</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="clock.html" class="active">World Clock</a></li>
+        <li><a href="contact.html" class="btn btn--primary">Get a Quote</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="clock-page-hero" role="banner">
+    <span class="clock-page-hero__label">Live Time</span>
+    <h1 class="clock-page-hero__title">World Clock</h1>
+    <p class="clock-page-hero__sub">Current time across the globe</p>
+  </header>
+
+  <!-- CLOCK GRID -->
+  <main id="main-content">
+    <section class="clock-section" aria-label="World clocks">
+      <div id="clock-grid" class="clock-grid" role="list">
+        <!-- Cards are injected by js/clock.js -->
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-footer__inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand__name">Pino Landscaping</div>
+          <div class="footer-brand__tag">Crafted for Life</div>
+          <p class="footer-brand__desc">Creating beautiful, enduring outdoor spaces since 2009.</p>
+          <div class="footer-social" aria-label="Social media links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">in</a>
+            <a href="#" aria-label="Pinterest">p</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__title">Quick Links</h3>
+          <ul role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="clock.html">World Clock</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__title">Services</h3>
+          <ul role="list">
+            <li><a href="services.html">Landscape Design</a></li>
+            <li><a href="services.html">Hardscaping</a></li>
+            <li><a href="services.html">Planting &amp; Gardens</a></li>
+            <li><a href="services.html">Irrigation Systems</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h3 class="footer-col__title">Get In Touch</h3>
+          <ul role="list">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.31 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <a href="tel:+15559876543">(555) 987-6543</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:hello@pinolandscaping.com">hello@pinolandscaping.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Pino Landscaping. All rights reserved.</p>
+        <div><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Sitemap</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/clock.js"></script>
+</body>
+</html>
