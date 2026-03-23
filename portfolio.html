@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse the Pino Landscaping portfolio — hardscaping, garden design, outdoor living spaces, water features, and more across residential and commercial projects." />
+  <meta name="keywords" content="landscaping portfolio, garden design examples, hardscape projects, outdoor living, Pino Landscaping work" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Portfolio | Pino Landscaping" />
+  <meta property="og:description" content="Explore our full portfolio of landscape design, hardscaping, planting, and outdoor living projects." />
+  <meta property="og:type" content="website" />
+  <title>Portfolio | Pino Landscaping</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav scrolled" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Pino Landscaping home">
+        <span class="nav-logo__name">Pino Landscaping</span>
+        <span class="nav-logo__tag">Crafted for Life</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="btn btn--primary">Get a Quote</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero" role="banner">
+    <div class="page-hero__bg" style="background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1400&q=70');" aria-hidden="true"></div>
+    <div class="page-hero__inner">
+      <span class="section-label">Our Work</span>
+      <h1 class="page-hero__title">Portfolio</h1>
+      <p class="page-hero__sub">
+        Every project in our portfolio is a testament to the skill, passion, and attention
+        to detail that Pino Landscaping brings to every client engagement.
+      </p>
+    </div>
+  </header>
+
+  <!-- FILTERS -->
+  <section aria-label="Filter portfolio by category">
+    <div class="container" style="padding-top: 2.5rem; padding-bottom: 0.5rem;">
+      <div class="portfolio-filters" role="group" aria-label="Category filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="design">Landscape Design</button>
+        <button class="filter-btn" data-filter="hardscape">Hardscaping</button>
+        <button class="filter-btn" data-filter="planting">Planting &amp; Gardens</button>
+        <button class="filter-btn" data-filter="water">Water Features</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO GRID -->
+  <main class="portfolio-full-grid" id="main-content">
+
+    <article class="portfolio-card" data-category="design">
+      <img class="portfolio-card__img"
+           src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=700&q=80"
+           alt="Sweeping rear-yard landscape redesign with natural stone pathways"
+           width="700" height="500" loading="lazy" />
+      <div class="portfolio-card__overlay">
+        <span class="portfolio-card__tag">Landscape Design</span>
+        <h2 class="portfolio-card__title">Henderson Estate Garden</h2>
+      </div>
+    </article>
+
+    <article class="portfolio-card" data-category="hardscape">
+      <img class="portfolio-card__img"
+           src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=700&q=80"
+           alt="Natural stone patio with built-in fire pit and seating wall"
+           width="700" height="500" loading="lazy" />
+      <div class="portfolio-card__overlay">
+        <span class="portfolio-card__tag">Hardscaping</span>
+        <h2 class="portfolio-card__title">Bluestone Patio &amp; Fire Pit</h2>
+      </div>
+    </article>
+
+    <article class="portfolio-card" data-category="planting">
+      <img class="portfolio-card__img"
+           src="https://images.unsplash.com/photo-1564419320461-6870880221ad?w=700&q=80"
+           alt="Colorful perennial garden border in full bloom"
+           width="700" height="500" loading="lazy" />
+      <div class="portfolio-card__overlay">
+        <span class="portfolio-card__tag">Planting &amp; Gardens</span>
+        <h2 class="portfolio-card__title">Riverside Perennial Border</h2>
+      </div>
+    </article>
+
+    <article class="portfolio-card" data-category="hardscape">
+      <img class="portfolio-card__img"
+           src="https://images.unsplash.com/photo-1585320806297-9794b3e4aaae?w=700&q=80"
+           alt="Tiered stone retaining walls on a sloped property"
+           width="700" height="500" loading="lazy" />
+      <div class="portfolio-card__overlay">
+        <span class="portfolio-card__tag">Hardscaping</span>
+        <h2 class="portfolio-card__title">Hillside Terrace Project</h2>
+      </div>
+    </article>
+
+    <article class="portfolio-card" data-category="water">
+      <img class="portfolio-card__img"
+           src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=700&q=80"
+           alt="Peaceful koi pond surrounded by lush plantings"
+           width="700" height="500" loading="lazy" />
+      <div class="portfolio-card__overlay">
+        <span class="portfolio-card__tag">Water Features</span>
+        <h2 class="portfolio-card__title">Tranquil Koi Pond Garden</h2>
+      </div>
+    </article>
+
+    <article class="portfolio-card" data-category="design">
+      <img class="portfolio-card__img"
+           src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80"
+           alt="Front-yard curb appeal transformation with hedging and flowering beds"
+           width="700" height="500" loading="lazy" />
+      <div class="portfolio-card__overlay">
+        <span class="portfolio-card__tag">Landscape Design</span>
+        <h2 class="portfolio-card__title">Curb Appeal Transformation</h2>
+      </div>
+    </article>
+
+    <article class="portfolio-card" data-category="commercial">
+      <img class="portfolio-card__img"
+           src="https://images.unsplash.com/photo-1543076659-9380c3f9e7e6?w=700&q=80"
+           alt="Commercial office park entrance landscaping with sculptural plantings"
+           width="700" height="500" loading="lazy" />
+      <div class="portfolio-card__overlay">
+        <span class="portfolio-card__tag">Commercial</span>
+        <h2 class="portfolio-card__title">Oakfield Business Park Entry</h2>
+      </div>
+    </article>
+
+    <article class="portfolio-card" data-category="planting">
+      <img class="portfolio-card__img"
+           src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=700&q=80"
+           alt="Native meadow planting with wildflowers and ornamental grasses"
+           width="700" height="500" loading="lazy" />
+      <div class="portfolio-card__overlay">
+        <span class="portfolio-card__tag">Planting &amp; Gardens</span>
+        <h2 class="portfolio-card__title">Native Meadow Restoration</h2>
+      </div>
+    </article>
+
+    <article class="portfolio-card" data-category="hardscape">
+      <img class="portfolio-card__img"
+           src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=80"
+           alt="Elegant driveway with brick paver apron and low border lighting"
+           width="700" height="500" loading="lazy" />
+      <div class="portfolio-card__overlay">
+        <span class="portfolio-card__tag">Hardscaping</span>
+        <h2 class="portfolio-card__title">Paver Driveway &amp; Entryway</h2>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner" aria-label="Call to action">
+    <div class="cta-banner__inner">
+      <h2 class="section-title">Love What You See?</h2>
+      <p>
+        Every project begins with a free, no-obligation consultation. Let's start
+        planning your dream landscape today.
+      </p>
+      <div class="cta-banner__actions">
+        <a href="contact.html" class="btn btn--primary">Book a Consultation</a>
+        <a href="services.html" class="btn btn--outline">View Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-footer__inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand__name">Pino Landscaping</div>
+          <div class="footer-brand__tag">Crafted for Life</div>
+          <p class="footer-brand__desc">
+            Creating beautiful, enduring outdoor spaces since 2009.
+          </p>
+          <div class="footer-social" aria-label="Social media links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">in</a>
+            <a href="#" aria-label="Pinterest">p</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__title">Quick Links</h3>
+          <ul role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__title">Services</h3>
+          <ul role="list">
+            <li><a href="services.html">Landscape Design</a></li>
+            <li><a href="services.html">Hardscaping</a></li>
+            <li><a href="services.html">Planting &amp; Gardens</a></li>
+            <li><a href="services.html">Irrigation Systems</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h3 class="footer-col__title">Get In Touch</h3>
+          <ul role="list">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.31 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <a href="tel:+15559876543">(555) 987-6543</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:hello@pinolandscaping.com">hello@pinolandscaping.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Pino Landscaping. All rights reserved.</p>
+        <div><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Sitemap</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
